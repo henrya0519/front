@@ -1,0 +1,29 @@
+<main class="container">
+   <
+      <div class="container-info">
+         <div>
+            <h1>Tu Préstamo</h1>
+            <h1>Personal</h1>
+            <h1>100% en línea</h1>
+         </div>
+         <div>
+            <h3>Desembolsamos en 2 horas</h3>
+            <h3>en tu Banco</h3>
+         </div>
+         <div>
+            <h3>hasta $ 2.000.000</h3>
+         </div>
+      </div>
+      <div class="container-select">
+  
+              <div *ngIf="show === 'amount'">
+                  <app-amount (changeView)="listenEvent($event)"></app-amount>
+              </div>
+             
+          
+            
+      </div>
+ </main>
+
+
+

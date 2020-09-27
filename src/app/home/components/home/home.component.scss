@@ -1,0 +1,26 @@
+.container {
+    padding-top:5%;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 66vh;
+    
+}
+
+.container-info {
+
+    width: 40vw;
+    border: 1px black solid;
+}
+
+.container-select {
+
+    width: 40vw;
+    border: 1px black solid;
+}
+
+.mat-slider-thumb {
+    background-color: yellow !important;
+}
+
+

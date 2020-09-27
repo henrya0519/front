@@ -1,0 +1,10 @@
+<div>
+    <form #createUser="ngForm" (ngSubmit)="onSubmit(createUser)" novalidate>
+      <input name="Nombre" ngModel required #Nombre="ngModel" placeholder="Nombre">
+      <input name="Apellidos" ngModel required #Apellidos="ngModel" placeholder="Apellidos">
+      <input name="Celular" ngModel required #Celular="ngModel" placeholder="Numero de Celular">
+      <input name="Cedula" ngModel required #Cedula="ngModel" placeholder="Cedula">
+      <button >Submit</button>
+    </form>
+  </div>
+  

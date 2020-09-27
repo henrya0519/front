@@ -1,0 +1,23 @@
+<div>
+                
+    <span>Elige el monto</span>
+    <span>{{value}}</span>
+    
+ </div>
+
+<mat-slider
+[disabled]="disabled"
+[invert]="invert"
+[max]="max"
+[min]="min"
+[step]="step"
+[thumbLabel]="thumbLabel"
+[tickInterval]="getSliderTickInterval()"
+[vertical]="vertical"
+[(ngModel)]="value">
+
+</mat-slider>
+
+<span>Fecha de Pago</span>
+<input [(ngModel)]="Fecha" placeholder="Fecha de Pago">
+<button mat-raised-button color="primary" (click)="Solicitar()">Soliticar Prestamo</button>

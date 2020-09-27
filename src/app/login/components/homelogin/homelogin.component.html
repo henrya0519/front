@@ -1,0 +1,35 @@
+<main class="container">
+    <div class="container-user">
+        <div *ngIf="show === 'login'" >
+            <app-login (sendUser)="getuser($event)"></app-login>
+        </div>
+        <div *ngIf="show === 'loan'" >
+            <button type="submit" (click)="solicitarPrestamo()">Solicitar Prestamo</button>
+        </div>
+        <div *ngIf="show === 'create'">
+            <app-createruser (newUser)="newUser($event)"></app-createruser>
+        </div>
+        
+    
+    </div>
+    <div class="container-information">
+        <div *ngIf = "show ==='login'">
+             Inicia Sesion
+            
+        </div>
+        <div   *ngIf="show === 'loan'">
+          <app-tablas [user]="user"></app-tablas>
+        </div>
+
+          
+
+       <div *ngIf="show === 'create'">
+           Creacìon de Usuario
+       </div>
+        
+    </div>
+
+
+  
+  
+</main>
