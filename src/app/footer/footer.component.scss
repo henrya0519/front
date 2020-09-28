@@ -4,8 +4,32 @@
     height: 30vh;
 }
 
-.container div
-{
+.container-legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 20vw;
-    border: 1px black solid;
+}
+
+.container-politicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+}
+
+
+h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+   
+}
+
+a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }

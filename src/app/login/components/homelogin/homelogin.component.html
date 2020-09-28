@@ -3,8 +3,15 @@
         <div *ngIf="show === 'login'" >
             <app-login (sendUser)="getuser($event)"></app-login>
         </div>
-        <div *ngIf="show === 'loan'" >
-            <button type="submit" (click)="solicitarPrestamo()">Solicitar Prestamo</button>
+        <div class="container-p" *ngIf="show === 'loan'" >
+            <h1>En la siguiente tabla encontraras</h1>
+            <h1>El estado de tus prestamos</h1>
+            <h1>Si tienes prestamos aprobados</h1>
+            <h1>inserta el Id de pago</h1>
+            <h1>Y oprime el boton pagar prestamo</h1>
+            
+           
+            <button type="submit"  mat-raised-button color="primary" (click)="solicitarPrestamo()">Solicitar Prestamo</button>
         </div>
         <div *ngIf="show === 'create'">
             <app-createruser (newUser)="newUser($event)"></app-createruser>
@@ -13,10 +20,7 @@
     
     </div>
     <div class="container-information">
-        <div *ngIf = "show ==='login'">
-             Inicia Sesion
-            
-        </div>
+        
         <div   *ngIf="show === 'loan'">
           <app-tablas [user]="user"></app-tablas>
         </div>

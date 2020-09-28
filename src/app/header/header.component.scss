@@ -1,6 +1,13 @@
 nav {
     display: flex;
+    justify-content: flex-end;
+    padding-right: 115px;
+
     
+}
+
+nav a {
+    color:white;
 }
 nav> a {
     padding: 5px;

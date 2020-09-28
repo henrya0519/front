@@ -5,8 +5,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
-;
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [],
@@ -16,14 +15,16 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSliderModule,
     MatFormFieldModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
   ],
   exports: [
     MatButtonModule,
     MatSliderModule,
     MatFormFieldModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
   ]
 })
 

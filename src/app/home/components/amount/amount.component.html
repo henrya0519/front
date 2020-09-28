@@ -1,23 +1,31 @@
-<div>
-                
-    <span>Elige el monto</span>
-    <span>{{value}}</span>
+<div class="container">
+    <div class="container-choose">
+       
+       <span>Elige el monto</span>
+       <span>${{value}}</span>
+      
+    </div>
+    <mat-slider
+    [disabled]="disabled"
+    [invert]="invert"
+    [max]="max"
+    [min]="min"
+    [step]="step"
+    [thumbLabel]="thumbLabel"
+    [tickInterval]="getSliderTickInterval()"
+    [vertical]="vertical"
+    [(ngModel)]="value">
+    </mat-slider>
+    <div class="container-amount"> 
+        <span>$200.000</span>
+        <span>$2.000.000</span>
+    </div>
     
+    <div class="container-form">
+        <mat-form-field class="example-full-width input1">
+            <mat-label>Fecha de pago</mat-label>
+            <input type="date" matInput  [(ngModel)]="Fecha" placeholder="Fecha de Pago">
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="Solicitar()">Soliticar Prestamo</button>
+    </div>
  </div>
-
-<mat-slider
-[disabled]="disabled"
-[invert]="invert"
-[max]="max"
-[min]="min"
-[step]="step"
-[thumbLabel]="thumbLabel"
-[tickInterval]="getSliderTickInterval()"
-[vertical]="vertical"
-[(ngModel)]="value">
-
-</mat-slider>
-
-<span>Fecha de Pago</span>
-<input [(ngModel)]="Fecha" placeholder="Fecha de Pago">
-<button mat-raised-button color="primary" (click)="Solicitar()">Soliticar Prestamo</button>

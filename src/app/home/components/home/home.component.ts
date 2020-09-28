@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   amount = 0;
 
   listenEvent(data: any): void{
+
+    
     this.user.Valor = data.Prestamo;
     this.user.Fecha = data.Fecha;
     this.requestService.apply_for_loan(this.user)

@@ -1,0 +1,28 @@
+.container {
+    background: white;
+    height: 50vh;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container-form{
+
+width: 20vw;
+height: 15vw;
+border-style: groove;
+border-radius: 10px;
+text-align: center;
+}
+
+
+mat-form-field
+{
+    display: block;
+}
+
+
+
+
+

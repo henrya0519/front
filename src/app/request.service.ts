@@ -22,7 +22,8 @@ export class RequestService {
     return this.http.post<any>(this.URL + 'create_user', user);
   }
 
-  apply_for_loan(user): any {
+    apply_for_loan(user): any {
+      console.log('loan: ', user);
     return this.http.post<any>(this.URL + 'loan', user);
   }
 

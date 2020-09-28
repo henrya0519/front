@@ -1,9 +1,7 @@
 import { Component, OnInit, Output, EventEmitter, ViewChild, Input } from '@angular/core';
-import { NgForm, ReactiveFormsModule } from '@angular/forms';
-import {MatPaginator} from '@angular/material/paginator';
-import {MatTableDataSource} from '@angular/material/table';
+import { NgForm, FormControl, Validators } from '@angular/forms';
 
-import {Router, ActivatedRoute, Params} from '@angular/router';
+import {Router,} from '@angular/router';
 import {RequestService} from './../../../request.service';
 
 
@@ -13,11 +11,22 @@ import {RequestService} from './../../../request.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  value = 'Clear me';
+  constructor(
+    private requestService: RequestService,
+    private router: Router
+    ) { }
 
   @Output() sendUser: EventEmitter <object> = new EventEmitter();
 
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
+
 
   onSubmit(login: NgForm): void {
+    console.log(login.value);
 
     this.requestService.sendPost(login.value)
     .subscribe( resp => {
@@ -28,11 +37,6 @@ export class LoginComponent implements OnInit {
 
     });
   }
-
-  constructor(
-    private requestService: RequestService,
-    private router: Router
-    ) { }
 
 
   ngOnInit(): void {

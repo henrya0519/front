@@ -4,18 +4,36 @@
     justify-content: space-around;
     width: 100vw;
     height: 66vh;
+    border-radius: 10px;
     
 }
 
 
 .container-user {
 
-    width: 40vw;
-    border: 1px black solid;
+    width: 30vw;
+    background: white;
+    border-radius: 10px;
 }
 
 .container-information {
 
-    width: 40vw;
-    border: 1px black solid;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: #3f51b5;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.container-p{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }

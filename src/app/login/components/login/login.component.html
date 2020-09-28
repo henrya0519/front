@@ -1,17 +1,24 @@
 
 <main class="container">
-    <div class="container-user">
-        <form #login="ngForm" (ngSubmit)="onSubmit(login)" novalidate>
-          <input name="Correo" ngModel required #Correo="ngModel" placeholder="nombre@mail.co">
-          <input type="password" name="Contraseña" ngModel required #Contraseña="ngModel" placeholder="Mínimo 8 caracteres">
-          
-         
-          <button >Submit</button>
-        </form>
-      </div>
-    <div class="container-information">
+  <div class="container-form">
+    <form #login="ngForm" (ngSubmit)="onSubmit(login)" novalidate>
+      <mat-form-field class="example-full-width input1">
+        <mat-label>Email</mat-label>
+        <input matInput name="Correo" ngModel required #Correo="ngModel" placeholder="nombre@mail.co">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+      <mat-label>Contraseña</mat-label>
+      
+      <input type="password" matInput  name="Contraseña" ngModel required #Contraseña="ngModel" placeholder="Mínimo 8 caracteres">
+      </mat-form-field>
+      <button mat-raised-button color="primary" >Iniciar Sesión</button>
+     
+     
+    </form>
 
-    </div>
+  </div>
+
+  
 </main>
 
 

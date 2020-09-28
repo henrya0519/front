@@ -1,8 +1,5 @@
-
-<div>
-  
-</div>
-  <div class="mat-elevation-z8">
+<div class="container"> 
+<div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
     <!-- Position Column -->
       <ng-container matColumnDef="Id">
@@ -40,6 +37,15 @@
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 </div>
 <div [hidden]="showButton">
-  <input [(ngModel)]="Id" placeholder="Escriba el Id de pago">
-  <button (click)='Pagar()'> Pagar Prestamo</button>
+  <div class="container-form" >
+    <mat-form-field class="example-full-width input1">
+      <mat-label>Id De Pago</mat-label>
+      <input matInput name="Correo" [(ngModel)]="Id" placeholder="Escriba el Id de pago">
+    </mat-form-field>
+    <button type="submit"  mat-raised-button color="primary" (click)="Pagar()">Pagar Prestamo</button>
+    
+  </div>
+
+</div>
+
 </div>

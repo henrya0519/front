@@ -9,18 +9,39 @@
 
 .container-info {
 
-    width: 40vw;
-    border: 1px black solid;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container-info_big{
+    padding-bottom: 10px;
 }
 
 .container-select {
 
-    width: 40vw;
-    border: 1px black solid;
+    width: 30vw;
+  
 }
 
 .mat-slider-thumb {
     background-color: yellow !important;
 }
 
+h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+h5{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+   
+}
 

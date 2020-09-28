@@ -1,6 +1,17 @@
-
-
 table {
     width: 100%;
-  }
-  
+}
+
+.container {
+  background: white;
+  width: 30vw;
+  height: 59.5vh;
+  border-radius: 16px;
+
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  align-items: center
+}

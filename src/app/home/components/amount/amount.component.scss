@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.container-choose {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-choose span{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 10px;
+
+}
+
+
+.container-amount {
+   
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.container-amount span{
+   
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+}
+

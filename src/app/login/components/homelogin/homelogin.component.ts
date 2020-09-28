@@ -30,6 +30,7 @@ export class HomeloginComponent implements OnInit {
   prestamo: any = {};
 
   constructor(private router: Router, private requestService: RequestService) {
+    console.log('prestamooo:', this.prestamo);
     this.prestamo = this.router.getCurrentNavigation().extras.state;
     this.getuserlogin();
   }
@@ -39,15 +40,20 @@ export class HomeloginComponent implements OnInit {
   }
 
   getuserlogin(): void {
-    console.log(this.prestamo);
 
-    /*this.requestService.getlogin({Cedula: this.prestamo.Cedula})
+    console.log(this.prestamo);
+    this.requestService.getlogin(this.prestamo)
     .subscribe( resp => {
+      if(resp){
       console.log('Resy get login: ', resp);
+      this.user = resp;
+      this.show = 'loan';
+      }
     },
     error => {
 
-    });*/
+    });
+  
   }
 
 

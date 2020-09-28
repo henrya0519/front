@@ -53,10 +53,14 @@ export class TablasComponent implements OnInit {
   Reload(): void {
     this.requestService.get_loans(this.user)
     .subscribe ( resp => {
+      
       if ( resp[0].Estado === 'Aprobado' || resp[0].Estado === 'NoPago')
       {
         console.log('Mostrar boton de pago');
         this.showButton = false;
+      }
+      else{
+        this.showButton = true;
       }
       this.dataSource = new MatTableDataSource<any>(resp);
       this.dataSource.paginator = this.paginator;
