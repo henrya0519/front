@@ -1,4 +1,4 @@
-<div class="container"> 
+<div class="containers"> 
 <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
     <!-- Position Column -->
@@ -37,7 +37,7 @@
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 </div>
 <div [hidden]="showButton">
-  <div class="container-form" >
+  <div class="containers-form" >
     <mat-form-field class="example-full-width input1">
       <mat-label>Id De Pago</mat-label>
       <input matInput name="Correo" [(ngModel)]="Id" placeholder="Escriba el Id de pago">

@@ -1,4 +1,4 @@
-.container {
+.containers {
     padding-top:5%;
     display: flex;
     justify-content: space-around;
@@ -9,14 +9,14 @@
 }
 
 
-.container-user {
+.containers-user {
 
     width: 30vw;
     background: white;
     border-radius: 10px;
 }
 
-.container-information {
+.containers-information {
 
     width: 30vw;
     border-radius: 10px;
@@ -29,7 +29,7 @@ h1 {
     font-size: 28px;
 }
 
-.container-p{
+.containers-p{
     width: 30vw;
     height: 60vh;
     display: flex;

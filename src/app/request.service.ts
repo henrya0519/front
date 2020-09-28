@@ -15,7 +15,6 @@ export class RequestService {
 
   getlogin(cedula): any {
     return this.http.post<any>(this.URL + 'get_user', cedula);
-
   }
 
   createUser(user): any {

@@ -1,9 +1,9 @@
-<main class="container">
-    <div class="container-user">
+<main class="containers">
+    <div class="containers-user">
         <div *ngIf="show === 'login'" >
             <app-login (sendUser)="getuser($event)"></app-login>
         </div>
-        <div class="container-p" *ngIf="show === 'loan'" >
+        <div class="containers-p" *ngIf="show === 'loan'" >
             <h1>En la siguiente tabla encontraras</h1>
             <h1>El estado de tus prestamos</h1>
             <h1>Si tienes prestamos aprobados</h1>
@@ -19,13 +19,12 @@
         
     
     </div>
-    <div class="container-information">
+    <div class="containers-information">
         
         <div   *ngIf="show === 'loan'">
           <app-tablas [user]="user"></app-tablas>
-        </div>
-
           
+        </div>
 
        <div *ngIf="show === 'create'">
            Creacìon de Usuario
